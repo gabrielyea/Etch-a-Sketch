@@ -1,0 +1,58 @@
+
+
+:root{
+    --numberOfBlocks: 1;
+}
+
+#container{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#numberInput{
+    text-align: center;
+}
+
+#title{
+
+}
+
+.btn:disabled,
+.btn[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.sketch{
+    display: grid;
+    height: 500px;
+    width: 500px;
+    background: LightGray;
+    grid-template-columns: repeat(var(--numberOfBlocks), 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    
+}
+
+.gridBlock1:selected
+.gridBlock1[selected]{
+    border:1px solid black;
+}
+
+
+.gridBlock{
+    border:1px solid black;
+}
+
+.gridBlock.paint{
+    background-color: black;
+}
+
+.gridBlock.clear{
+    transition: 2s;
+    background-color: darkorange;
+}
+
